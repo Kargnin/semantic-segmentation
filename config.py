@@ -49,7 +49,7 @@ cfg = __C
 __C.GLOBAL_RANK = 0
 __C.EPOCH = 0
 # Absolute path to a location to keep some large files, not in this dir.
-__C.ASSETS_PATH = '/home/dcg-adlr-atao-data.cosmos277/assets'
+__C.ASSETS_PATH = '/content/drive/'My Drive/'
 
 # Use class weighted loss per batch to increase loss for low pixel count classes per batch
 __C.BATCH_WEIGHTING = False
@@ -75,9 +75,9 @@ __C.TRAIN.FP16 = False
 #Attribute Dictionary for Dataset
 __C.DATASET = AttrDict()
 #Cityscapes Dir Location
-__C.DATASET.CITYSCAPES_DIR = \
+__C.DATASET.CITYSCAPES_DIR = '/citys'
   os.path.join(__C.ASSETS_PATH, 'data/Cityscapes')
-__C.DATASET.CITYSCAPES_CUSTOMCOARSE = \
+__C.DATASET.CITYSCAPES_CUSTOMCOARSE = '/content/drive/'My Drive'/Auto_citys'
   os.path.join(__C.ASSETS_PATH, 'data/Cityscapes/autolabelled')
 __C.DATASET.CENTROID_ROOT = \
   os.path.join(__C.ASSETS_PATH, 'uniform_centroids')
